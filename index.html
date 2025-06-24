@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>exercicio 1</title>
 </head>
-
 <body>
+    
     <h1 class="titulo">Tabuada</h1>
     <label for="numero">Digite um número:</label>
     <input type="text" id="numero" />
@@ -25,9 +24,13 @@
         const valor = parseInt(input.value);
         for (let i = 1; i <= 10; i++) {
           const linha = document.createElement("p");
-          linha.textContent = `${valor} x ${i} = ${valor * i}`;
+          linha.textContent = `${valor} x ${i} = ${valor * i}`; 
+          resultado.appendChild(linha);
         }
-        });
-</script>
+      });
+
+    </script>
+
+
 </body>
 </html>
